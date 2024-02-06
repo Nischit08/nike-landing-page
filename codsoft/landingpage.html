@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <style>
+        *{
+            }
+        header{display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            
+            }
+ nav ul a{
+    display: inline;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    text-align: center;
+padding: 30px;
+text-decoration: none;
+color: black;
+
+}
+li{
+    display: inline;
+    justify-content: space-between;
+    color: black;
+
+}
+li:hover{
+   filter: drop-shadow(  10px 7px 5px #A7A77D);
+    width: 50px;
+    height: 1px;
+    transition: 1s;
+}
+.line{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 1px;
+    width: 98%;
+    margin: 20px;
+}
+.i1 ul li{
+display: inline;
+justify-content: center;
+padding: 20px;
+}
+.nlogo{
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+text-align: center;
+margin-top: 50px;
+font-stretch: condensed;
+color: #9E9F7E;
+font-size: 50px;
+}
+.aj6{
+    align-items: center;
+    
+    text-align: center;
+}
+.overlay{
+    font-size: 50px;
+    position: absolute;
+  top: 50px;
+  left: 150px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #542322;
+ justify-content: space-between;
+  
+}
+.imgg{
+    position: relative;
+}
+.sole{
+    background: linear-gradient(6deg,#1B1B1B,#B6B797,#FD2833);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.overlay1{
+    font-size: 50px;
+    position: absolute;
+    top:10%;
+    font-family: sans-serif;
+    font-style:italic;
+    font-weight: bold;
+    
+
+}
+.material{
+    background: linear-gradient(6deg,#1B1B1B,#B6B797,#FD2833);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.clr{
+    background: linear-gradient(6deg,#1B1B1B,#B6B797,#FD2833);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.price{
+    position: absolute;
+    top: 350px;
+    left: 320px;
+    font-size: 90px;
+}
+.info{
+font-size: 50px; 
+    text-align: center;
+}
+.container{
+ display: inline-flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 20px;
+text-align: center;
+align-items: center;
+margin-left: 7.44%;
+}
+.container1{
+    text-align: center;
+ display: inline-flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin:20px ;
+ align-items: center;
+ margin-left: 7.44%;
+
+}
+.zoomed{
+    text-align: center;
+}
+.pd{
+    text-align:center;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-style: italic;
+    background-color: #9e9f7e8a;
+    border-radius: 10px;
+    height: 575px;
+    width: 550px;
+    padding: 20px;
+    backdrop-filter: blur(100px);
+-webkit-backdrop-filter: blur(12.4px);
+margin-top: 25px;
+border: 3px #FD2833 solid;
+}
+.pro{
+text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+
+
+}
+.proddeta{
+    text-align:center;
+    font-size: 45px;
+    font-family: sans-serif;
+    font-style: italic;
+    background-color: #9e9f7e8a;
+    border-radius: 10px;
+    height: 575px;
+    width: 550px;
+    padding: 20px;
+    backdrop-filter: blur(1000px);
+-webkit-backdrop-filter: blur(12.4px);
+margin-top: 25px;
+border: 3px #FD2833 solid;
+margin-left: 10px;
+}
+.pro1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+}
+.ae{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+}
+.tsc{
+    margin: 30px;
+}
+.col{
+    padding-top: 85px;
+ position: absolute;
+ font-size: 63px;
+ left: 1750px;
+ font-family: sans-serif;
+ font-style: italic;
+ font-stretch: extra-condensed;
+ font-weight: bolder;
+}
+.mcol
+{
+    background-color:#000;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+text-align:center;
+margin-top: 45px;
+    font-size: 50px;
+    height: 50px;
+    align-items: center;
+    align-content: center;
+    padding: 45px;
+}
+.ndc{
+    position: relative;
+}
+.dior
+{
+    position: absolute;
+    top: 175px;
+    left: 650px;
+    color: #A9A9A9;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+text-align:center;
+font-stretch: condensed;
+font-size: 150px;
+padding-top: 40px;
+}
+.j{
+    position: absolute;
+    top: 650px;
+    left: 1290px;
+    font-size: 45px;
+    font-family: sans-serif;
+    font-stretch: extra-condensed;
+    font-style: italic;
+}
+.jo{
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bolder;
+    font-stretch: extra-condensed;
+}
+.dior1{
+    text-align: center;
+
+}
+.lv{
+position: relative;
+}
+.louis{
+text-align: center;
+font-size: 150px;
+font-family: sans-serif;
+font-weight: bolder;
+font-stretch: condensed;
+font-style: italic;
+background: linear-gradient(10deg,#038152,#9FC5BF,#141316,#1F0E83);
+-webkit-background-clip: text;
+color: transparent;
+}
+.g{
+position: absolute;
+top:620px;
+left: 220px;
+font-style: italic;
+font-stretch: condensed;
+font-size: 20px;
+}
+.gra{
+position: absolute;
+top:620px ;
+left:720px ;
+font-style: italic;
+font-stretch: condensed;
+font-size: 20px;
+}
+.b{
+position: absolute;
+top: 620px;
+left:1225px ;
+font-style: italic;
+font-stretch: condensed;
+font-size: 20px;
+}
+.bl{
+position: absolute;
+top: 620px;
+left: 1750px; ;
+font-style: italic;
+font-stretch: condensed;
+font-size: 20px;
+}
+.cont{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 50px;
+    padding: 50px;
+}
+.vuitton{
+    padding: 100px;
+}
+
+.v1{
+    padding: 100px;
+}
+.v2{
+    padding: 107px;
+}
+ .v3{
+    padding: 100px;
+
+ }   
+ .off{
+    position: relative;}
+    .af1{
+position: absolute;
+top:1350px ;
+left:300px ;
+font-size: 25px;
+font-family: sans-serif;
+font-style:italic;
+    }
+    .af2{
+        position: absolute;
+top:1350px ;
+left:1370px ;
+font-size: 25px;
+font-family: sans-serif;
+font-style:italic;
+    }
+    .af3{
+        position: absolute;
+top:2479px ;
+left:390px ;
+
+font-size: 25px;
+font-family: sans-serif;
+font-style:italic;
+    }
+    .af4{
+        position: absolute;
+top: 2730px;
+left:1390px ;
+
+font-size: 25px;
+font-family: sans-serif;
+font-style:italic;
+    }
+    .now{
+font-size: 60px;
+    }
+    .n10{
+        font-size: 60px;
+    }
+    .ms{
+        font-size: 60px;
+    }
+    .ub{
+        font-size: 60px;
+    }
+ 
+ .on{
+    position: absolute;
+    top: 150px;
+    left: 650px;
+    text-align: center;
+font-size: 150px;
+font-family: sans-serif;
+font-weight: bolder;
+font-stretch: condensed;
+font-style: italic;
+background: linear-gradient(110deg,#077CBC,#FB904B,#DE1E16,#4BA2D9);
+-webkit-background-clip: text;
+color: transparent;
+ }
+ .o1{
+padding: 50px;
+ }
+ .o2{
+padding: 50px;
+ }
+ .o3{
+padding: 50px;
+ }
+ .o4{
+padding: 50px;
+ }
+.ow1{
+    display: inline-flex;
+flex-direction: row;
+}
+.ow2{
+    display: inline-flex;
+    flex-direction:row ;
+}
+.supreme{
+    position: relative;
+}
+.saf1{
+position: absolute;
+top: 1330px;
+left:270px;
+font-size: 25px;
+font-style: italic;
+font-family: sans-serif;
+}
+.saf2{
+position: absolute;
+top: 1330px;
+left:1380px;
+font-size: 25px;
+font-style: italic;
+font-family: sans-serif;
+}
+.saf3{
+position: absolute;
+font-size: 25px;
+font-style: italic;
+font-family: sans-serif;
+
+top: 2750px;
+left:300px;
+}
+.saf4{
+position: absolute;
+top: 2750px;
+left: 1400px;
+font-size: 25px;
+font-style: italic;
+font-family: sans-serif;
+}
+.n1{
+    font-size: 60px;
+    font-family: sans-serif;
+    font-style: italic;
+
+}
+.sup{
+    position: absolute;
+    top: 150px;
+    left: 650px;
+    text-align: center;
+font-size: 150px;
+font-family: sans-serif;
+font-weight: bolder;
+font-stretch: condensed;
+font-style: italic;
+background: linear-gradient(110deg,#9E6732,#395661,#C02A54,#2AA671,#2D7992);
+-webkit-background-clip: text;
+color: transparent;
+}
+.nsu1{
+    display: inline-flex;
+flex-direction: row;
+}
+.nsu2{
+    display: inline-flex;
+flex-direction: row;
+}
+.s1{
+padding: 50px;
+}
+.s2{
+    padding: 50px;
+}
+.s3{
+    padding: 50px;
+}
+.s4{
+    padding: 50px;
+}
+.box1{
+    position: absolute;
+top: 280px;
+    border: 1px solid black;
+    width: 650px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.box2{
+    position: absolute;
+    left: 900px;
+    top: 280px;
+    border: 1px solid black;
+    width: 650px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding: 31.6px;
+
+}
+.pp{
+    width: 70px;
+}
+.ee{
+    width: 70px;
+
+}
+.mail{
+    padding: 150px;
+    position: relative;
+    margin: 200px;
+}
+.m{
+    font-size: 50px;
+    padding: 30px;
+}
+.q{
+    background-color: #000;
+    height: 1px;
+width: 2261px;
+margin-bottom: 10px;
+}
+footer{
+    background-color: #b6b79723;
+    height: 400px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.cs{
+    position: absolute;
+font-size: 25px;
+padding: 40px;
+
+}
+.csgo{
+    font-size: 50px;
+    padding: 20px;
+}
+.foot{
+    position: relative;
+    text-align: center;
+}
+.fl{
+font-size: 50px;
+padding: 30px;
+text-align: center;
+}
+.fl1{
+padding: 30px;
+}
+.fl2{
+    padding: 30px;
+}
+.fl3{
+    padding: 30px;
+}
+.fl4{
+    padding: 30px;
+}
+.fl5{
+    padding: 30px;
+}
+.follow{
+    position: absolute;
+    top: 50px;
+    left: 900px;
+}
+.nike{
+    background:linear-gradient(180deg,#077CBC,#1F0E83,#FB904B,#C02A54,#DE1E16,#FD2833);
+    -webkit-background-clip: text;
+color: transparent;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 1650px;
+    font-size: 70px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.log{
+    width: 70px;
+    padding-left: 50px;
+}
+.sb1{
+width: 40px;
+}
+.sb2{
+    width: 40px;
+}
+.sb3{
+    width: 40px;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo"><img class="log" src="Vector.png"></div>
+        
+        <nav>
+            
+            <ul>
+              <li><a href="#">New & featured</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Customise</a></li>
+
+            </ul>
+        
+        </nav>
+        <div class="i1">
+<ul>
+            <li><a href="#"><img class="sb1" src="Shopping Bag - 192x192.png"></a></li>
+            <li><a href="#"><img class="sb2" src="Search - 192x192.png"></a></li>
+            <li><a href="#"><img class="sb3" src="Heart - 192x192.png"></a></li>
+        </ul>
+        </div>
+    </header>
+    <div class="line">
+
+
+    </div>
+    <div class="nlogo">Nike X Travis Scott</div>
+    <div class="imgg">
+    <div class="aj6">
+        <img src="aj6ts.jpg">
+    </div>
+    <div class="overlay">
+        <ul>
+        <li>Sole :<span class="sole">Rubber</span></li><br>
+        <li>Material :<span class="material">Suede</span></li><br>
+        <li>Color :<span class="clr">Olive</span></li>
+        </ul>
+ </div>
+ <div class="price">MRP :20,999 INR</div>
+</div>
+<div class="info">
+    Air Jordan VI<br>
+    <b><i>Travis Scott</i></b>
+
+    
+</div>
+<div class="container">
+<div class="ts1"><img src="ts1.jpg"></div>
+<div class="ts2"><img src="ts2.jpg"></div>
+<div class="ts3"><img src="ts3.jpg"></div>
+</div><br>
+    <div class="container1">
+<div class="ts4"><img src="ts4.jpg"></div>
+<div class="ts5"><img src="ts5.jpg"></div>
+<div class="ts6"><img src="ts6.jpg"></div>
+</div><br>
+<div class="zoomed">
+<div class="zoom1"><img src="ajz3.jpg"></div>
+<div class="zoom2"><img src="ajz1.jpg"></div>
+<div class="zoom3"><img src="ajz.jpg"></div>
+</div>
+<div class="ae">
+<div class="pd"><span class="pro">Product Description</span><br>
+    Trailing the buzz of their recent collaborations, Travis Scott and Jordan Brand team up once again for the Jordan 6 Retro Travis Scott, now available on StockX. This is the fourth Air Jordan silhouette that Cactus Jack has touched. This sneaker made its mainstream debut when Travis rocked them on stage during his Super Bowl LIII performance and the rest is history.
+    
+    <br>
+    This AJ 6 features an olive upper with black detailing and red contrasting accents on the tongue and lace locks. A side cargo pocket is displayed on the collar, giving this sneaker a design modification that makes it the first of its kind. A sail midsole, glow-in-the-dark translucent outsole, 3M detailing and both Nike Air and Cactus Jack branding on the heel completes the design. These sneakers released in October of 2019 for $250.</div>
+<div class="proddeta">
+   <span class="pro1"> Product Details</span><br>
+Style : CN1084-200<br>
+
+Colorway : Medium Olive/Black-Sail-University Red
+<br>
+Retail Price : $250
+<br>
+Release Date : 10/11/2019
+<br>
+Included Accessories : Yellow Laces, Black Laces, Red lacelock
+</div>
+<div class="tsc">
+    <img src="tscott.webp">
+</div>
+<div class="col">
+    In collaboration with Travis Scott</div>
+</div>
+<div class="mcol">More collaborations</div>
+<div class="ndc">
+<div class="dior">
+    Nike X Dior
+</div>
+<div class="j"><span class="jo">Jordan</span><br>
+    x Dior Air Jordan 1 Retro High sneakers</div>
+<div class="dior1">
+    <img src="nd.webp">
+</div>
+</div>
+<div class="lv">
+    <div class="louis">
+    Nike X Louis Vuitton
+</div>
+<div class="cont">
+    <div class="g">
+Louis Vuitton x Air Force 1 Low<br> 'White Gym Green'[2022]
+    </div>
+    <div class="gra">
+        Louis Vuitton x Air Force 1 Mid <br>'Graffiti'[2022]
+    </div>
+    <div class="b">
+        Louis Vuitton x Air Force 1 Low <br>'Triple Black'[2022]
+    </div>
+    <div class="bl">
+
+        Louis Vuitton x Air Force 1 Low <br>'Multi-Color Patchwork'[2022]
+    </div>
+<div class="vuitton">
+    <img src="nlv.webp">
+</div>
+<div class="v1"><img src="1A9V_GRAFFITI_MID.png.webp"></div>
+<div class="v2"><img src="1005433_00.png.webp"></div>
+<div class="v3"><img src="1005434_00.png.webp"></div>
+</div>
+</div>
+<div class="off">
+<div class="on">Nike X Off-White</div>
+<div class="af1"><span class="now">Nike X Off-White</span><br>
+    Air Force 1 lace-up sneakers</div>
+<div class="af2"><span class="n10">Nike X Off-White</span><br>
+    The 10: Air Force 1 Low "Black" sneakers</div>
+<div class="af3"><span class="ms">Nike X Off-White</span><br>
+    The 10: Nike Blazer Mid sneakers</div>
+<div class="af4"><span class="ub">Nike X Off-White</span><br>
+    Air Rubber Dunk "University Blue" sneakers</div>
+<div class="ow1">
+<div class="o1"><img src="noff.webp"></div>
+<div class="o2"><img src="noff1.webp"></div>
+</div>
+<div class="ow2">
+<div class="o3"><img src="noff2.webp"></div>
+<div class="o4"><img src="noff3.webp"></div>
+</div>
+</div>
+<div class="supreme">
+<div class="sup">Nike X Supreme</div>
+<div class="saf1"><span class="n1">Nike</span><br>
+    x Supreme Air Force 1 Low SP "Supreme" sneakers</div>
+<div class="saf2"><span class="n1">Nike</span><br>
+    x Supreme SB Dunk Low "Rammellzee" sneakers</div>
+<div class="saf3"><span class="n1">Nike</span><br>
+    x Supreme SB Blazer sneakers</div>
+<div class="saf4"><span class="n1">Nike</span><br>
+    x Supreme SB Dunk High "Rammellzee" sneakers</div>
+<div class="nsu1">
+<div class="s1"><img src="ns.jpg"></div>
+<div class="s2"><img src="nssbl.webp"></div>
+</div>
+<div class="nsu2">
+<div class="s3"><img src="nsb.webp"></div>
+<div class="s4"><img src="nssb.webp"></div>
+</div>
+</div>
+<div class="mail">
+    <div class="m">Contact Us</div>
+    <div class="box1">
+    <div class="ei">
+        <img class="ee"src="Emailico.png">
+    </div>
+EMAIL US<br>
+GET IN TOUCH WITH US<br>
+customerservices@hotmail.com<br>
+COLLOBORATE WITH US:noobgamerg1863@gmail.com
+</div>
+<div class="box2">
+    <div class="pi">
+        <img class="pp" src="Phone ico.png">
+
+    </div>
+    ORDER BY PHONE<br>
+    EVERY DAY,EVERYONE,ANYTIME <span class="jdi">JUST DO IT</span><br>
+    +91 799XXXXXXX.
+</div>
+</div>
+<div class="q"></div>
+<footer>
+    <div class="foot">
+<div class="cs">
+<span class="csgo">Customer Services</span><br>
+Contact Us<br>
+FAQ<br>
+Orders & Delivery<br>
+Return Policy<br>
+Crypto Payment<br>
+Terms & Conditions
+</div >
+<div class="follow">            
+<div class="fl">Follow US </div>
+<img class="fl1" src="fb.png">
+<img class="fl2" src="x.png">
+<img class="fl3" src="pin.svg">
+<img class="fl4" src="ig.png">
+<img class="fl5" src="yt.png">
+</div>
+<div class="nike">
+  <b> Nike</b><br>Just Do It.
+</div>
+</div>
+
+</footer>
+</body>
+</html>
